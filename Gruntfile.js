@@ -21,7 +21,7 @@ module.exports = function (grunt) {
   var generateGlyphiconsData = require('./grunt/bs-glyphicons-data-generator.js');
   var BsLessdocParser = require('./grunt/bs-lessdoc-parser.js');
   var getLessVarsData = function () {
-    var filePath = path.join(__dirname, 'less/variables.less');
+    var filePath = path.join(__dirname, 'less/<%= pkg.name %>/variables.less');
     var fileContent = fs.readFileSync(filePath, { encoding: 'utf8' });
     var parser = new BsLessdocParser(fileContent);
     return { sections: parser.parseFile() };
@@ -162,7 +162,7 @@ module.exports = function (grunt) {
           sourceMapURL: '<%= pkg.name %>.css.map',
           sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
         },
-        src: 'less/<%= pkg.name %>.less',
+        src: 'less/<%= pkg.name %>/<%= pkg.name %>.less',
         dest: 'dist/css/<%= pkg.name %>.css'
       },
       compileTheme: {
