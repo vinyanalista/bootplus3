@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap",
+  "name": "bootplus3",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "version": "3.3.5",
   "keywords": [
@@ -16,15 +16,15 @@
   "scripts": {
     "test": "grunt test"
   },
-  "style": "dist/css/bootstrap.css",
-  "less": "less/bootstrap.less",
+  "style": "dist/css/bootplus3.css",
+  "less": "less/bootplus3.less",
   "main": "./dist/js/npm",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twbs/bootstrap.git"
+    "url": "https://github.com/vinyanalista/bootplus3.git"
   },
   "bugs": {
-    "url": "https://github.com/twbs/bootstrap/issues"
+    "url": "https://github.com/vinyanalista/bootplus3/issues"
   },
   "license": "MIT",
   "devDependencies": {
@@ -71,9 +71,9 @@
     "LICENSE"
   ],
   "jspm": {
-    "main": "js/bootstrap",
+    "main": "js/bootplus3",
     "shim": {
-      "js/bootstrap": {
+      "js/bootplus3": {
         "deps": "jquery",
         "exports": "$"
       }
